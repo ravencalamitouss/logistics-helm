@@ -4,7 +4,7 @@
 appEnv: development
 
 pickup:
-  tag: dev-latest       # auto-updated when logistics-pickup pushes to dev
+  tag: dev-1665e9d
   replicaCount: 1
 
 delivery:
