@@ -6,6 +6,8 @@ environments:
     values:
       - environments/prod.yaml
 
+---
+
 releases:
   - name: logistics-pickup
     namespace: logistics-{{ .Environment.Name }}
