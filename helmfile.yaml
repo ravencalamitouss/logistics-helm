@@ -1,9 +1,3 @@
-# helmfile.yaml
-# Manages ALL logistics services across ALL environments
-# One command to rule them all:
-#   helmfile -e dev sync    → deploys ALL services to dev
-#   helmfile -e prod sync   → deploys ALL services to prod
-
 environments:
   dev:
     values:
@@ -12,10 +6,7 @@ environments:
     values:
       - environments/prod.yaml
 
----
-
 releases:
-  # ─── Pickup Service ───────────────────────────────────────
   - name: logistics-pickup
     namespace: logistics-{{ .Environment.Name }}
     createNamespace: true
@@ -38,7 +29,6 @@ releases:
       - name: resources.requests.memory
         value: {{ .Values.resources.requests.memory }}
 
-  # ─── Delivery Service ─────────────────────────────────────
   - name: logistics-delivery
     namespace: logistics-{{ .Environment.Name }}
     createNamespace: true
