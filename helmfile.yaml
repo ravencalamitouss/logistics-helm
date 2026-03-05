@@ -20,14 +20,6 @@ releases:
         value: {{ .Values.pickup.replicaCount }}
       - name: env.APP_ENV
         value: {{ .Values.appEnv }}
-      - name: resources.limits.cpu
-        value: {{ .Values.resources.limits.cpu }}
-      - name: resources.limits.memory
-        value: {{ .Values.resources.limits.memory }}
-      - name: resources.requests.cpu
-        value: {{ .Values.resources.requests.cpu }}
-      - name: resources.requests.memory
-        value: {{ .Values.resources.requests.memory }}
 
   - name: logistics-delivery
     namespace: logistics-{{ .Environment.Name }}
@@ -42,11 +34,3 @@ releases:
         value: {{ .Values.delivery.replicaCount }}
       - name: env.APP_ENV
         value: {{ .Values.appEnv }}
-      - name: resources.limits.cpu
-        value: {{ .Values.resources.limits.cpu }}
-      - name: resources.limits.memory
-        value: {{ .Values.resources.limits.memory }}
-      - name: resources.requests.cpu
-        value: {{ .Values.resources.requests.cpu }}
-      - name: resources.requests.memory
-        value: {{ .Values.resources.requests.memory }}

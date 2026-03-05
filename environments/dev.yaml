@@ -1,20 +1,9 @@
-# environments/dev.yaml
-# Auto-updated by GitHub Actions CI via devops-central
-
 appEnv: development
 
 pickup:
-  tag: dev-latest       # auto-updated when logistics-pickup pushes to dev
+  tag: dev-latest
   replicaCount: 1
 
 delivery:
-  tag: dev-latest       # auto-updated when logistics-delivery pushes to dev
+  tag: dev-latest
   replicaCount: 1
-
-resources:
-  limits:
-    cpu: 100m
-    memory: 128Mi
-  requests:
-    cpu: 50m
-    memory: 64Mi
