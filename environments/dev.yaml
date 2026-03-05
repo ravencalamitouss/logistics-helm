@@ -4,7 +4,7 @@
 appEnv: development
 
 pickup:
-  tag: dev-1665e9d
+  tag: dev-372c3ed
   replicaCount: 1
 
 delivery:
