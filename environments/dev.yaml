@@ -8,7 +8,7 @@ pickup:
   replicaCount: 1
 
 delivery:
-  tag: dev-4fb7065
+  tag: dev-3e3c0dd
   replicaCount: 1
 
 resources:
