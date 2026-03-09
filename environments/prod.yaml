@@ -9,7 +9,7 @@ pickup:
   replicaCount: 2
 
 delivery:
-  tag: main-latest      # auto-updated when logistics-delivery merges to main
+  tag: prod-9e2e3f8
   replicaCount: 2
 
 resources:
