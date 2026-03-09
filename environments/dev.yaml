@@ -8,7 +8,7 @@ pickup:
   replicaCount: 1
 
 delivery:
-  tag: dev-latest       # auto-updated when logistics-delivery pushes to dev
+  tag: dev-9e2e3f8
   replicaCount: 1
 
 resources:
